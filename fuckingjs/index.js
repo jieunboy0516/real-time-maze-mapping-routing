@@ -638,7 +638,7 @@ wallselect.addEventListener("change", function (event) {
 
 //simulator******************************************************
 
-let simulatorstep = minimumdistancetolastpos;
+let simulatorstep = 5;
 
 document.addEventListener("keydown", function (event) {
   if (
