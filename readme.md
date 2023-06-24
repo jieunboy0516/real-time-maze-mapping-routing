@@ -100,6 +100,11 @@ Since we were not always in the lab to perform testing on the maze, I build a si
 
 ![simulation](./imgs/simulate.gif)
 
+
+### Socket.IO Communication
+
+This repo is included with a backend server. The rover communicates with the server through the MQTT protocol while the server communicates with the frontend with [Socket.IO](https://socket.io/get-started/chat) packets. Therefore the frontend UI is heavily integrated with socket.io functions such as `socket.on` and `socket.emit`.
+
 ### Other Features
 
 There are few other features implemented but will not be described here, which includes adding 'unreachable data point' with keyboard presses. It is done because not all the points in the maze region can be explored so I allowed adding 'unreachable data points' manually. Note: the unreachable data points usually present in closed loop unreachable areas.
