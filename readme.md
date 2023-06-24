@@ -94,7 +94,7 @@ As said, our strategy to maze mapping requires closed loop detection. This is do
 
 ![closed loop](./imgs/closedloop.gif)
 
-## Rover Position Simulation
+### Rover Position Simulation
 
 Since we were not always in the lab to perform testing on the maze, I build a simulation feature which allows the data points to be added by the keyboard arrow keys to simulate the rover movement. I also added the option to select which wall is being followed (left, right or none).
 
