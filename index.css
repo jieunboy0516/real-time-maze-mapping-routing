@@ -1,0 +1,46 @@
+/* Center align text in input fields */
+input[type="text"],
+select {
+  text-align: center;
+}
+
+/* Add border to buttons */
+button {
+  border: 1px solid #ccc;
+}
+
+button:active {
+  background-color: #ffb6c1; /* Set the desired background color */
+}
+
+/* Add margin and padding to buttons */
+button {
+  margin: 5px;
+  padding: 5px 10px;
+}
+
+/* Increase font size of labels */
+label {
+  font-size: 14px;
+}
+
+/* Add margin to checkboxes and labels */
+input[type="checkbox"],
+label {
+  margin-right: 5px;
+}
+
+/* Set font size for status, data, and mouse coordinate labels */
+#status,
+#data-label,
+#mousecoord-label {
+  font-size: 16px;
+}
+
+/* Add margin to scatter area */
+#scatter_area {
+  margin-top: 10px;
+}
+
+/* Add additional styling as needed */
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="index.css">
+
+<button id="mybutton" onmousedown="getrawdataclicked()">Get raw data (local)</button>
+<button id="mybutton2" onmousedown="getblurreddataclicked()">Get blurred data (local)</button>
+<input type="text" id="textboxkmeannumber" placeholder = "number of K mean clusters" value = "2" >
+<button id="kmeanbutton" onclick="KmeanButton()">K mean</button>
+<button id="cleardatapointbutton" onclick="cleardatapoints()">
+  clear datapoints points
+</button>
+<button id="connectclusterbutton" onclick="connectclusterbutton()">
+  connect clusters
+</button>
+<button id="resetcountbutton" onclick="resetcount()">reset count</button>
+<button id="getfakedatabutton" onclick="getfakedata()">Get fake data</button>
+<button id="findunexplored" onclick="findUnexploredPart()">find unexplored part</button>
+<button id="btnflipX" onclick="flipX()">Flip X axis</button>
+<button id="btnflipY" onclick="flipY()">Flip Y axis</button>
+
+<button id="button_testsocket" onclick="testsocket()">test socket</button>
+
+<div id="currentclusterindex">current index:</div>
+<select id="followingwall">
+  <option value="left">left</option>
+  <option value="right">right</option>
+  <option value="none">none</option>
+</select>
+<input type="checkbox" id="checkboxshowwall" checked>
+<label for="checkboxshowwall">show walls</label>
+<input type="checkbox" id="checkboxshowscatterline" checked>
+<label for="checkboxshowscatterline">show scatterlines</label>
+<input type="checkbox" id="checkboxshowdatapoints" checked>
+<label for="checkboxshowdatapoints">show datapoints</label>
+<input type="checkbox" id="checkboxshowmazebound">
+<label for="checkboxshowmazebound">show mazebound</label>
+<input type="checkbox" id="checkboxshowmazegrid">
+<label for="checkboxshowmazegrid">show maze grid</label>
+<input type="checkbox" id="checkboxshowpointsingrid">
+<label for="checkboxshowpointsingrid">show # points in grid</label>
+<input type="checkbox" id="checkboxshowclosedlooppolygons" checked>
+<label for="checkboxshowclosedlooppolygons">show closed loop polygons</label>
+<input type="checkbox" id="checkboxshowKmean" checked>
+<label for="checkboxshowKmean">show K Means</label>
+<input type="checkbox" id="checkboxshowAstarPath" checked>
+<label for="checkboxshowAstarPath">show solved route (A*)</label>
+<br/>
+<input type="checkbox" id="checkboxastartoclosestunxpolored" checked>
+<label for="checkboxastartoclosestunxpolored">when we detected a closed loop, use A star to lead us to the cloest unexplored region</label>
+<br/>
+<label for="textbox1">Start Cluster:</label>
+<input type="text" id="textboxstartcluster" value = "1"/>
+<label for="textbox2">End Cluster</label>
+<input type="text" id="textboxendcluster" value = "2" />
+<label for="textboxgridbottomleft">bottom left grid (X,Y):</label>
+<input type="text" id="textboxgridbottomleft" value = "predefined"/>
+<label for="textboxgridtopright">top right grid (X,Y):</label>
+<input type="text" id="textboxgridtopright" value = "predefined" />
+<button id="btnsetgrid" onclick="resizeGrid()">Resize Grid</button>
+<label for="textboxcolumnrow">Columm,Row:</label>
+<input type="text" id="textboxcolumnrow" value = "predefined" />
+<button id="btnsetcolumnrow" onclick="setColumnRow()">Set # Column Row</button>
+<label for="textboxxytoclosestcluster">X,Y</label>
+<input type="text" id="textboxxytoclosestcluster" value = "predefined" />
+<button id="btngetclosestcluster" onclick="GetClosestCluster()">Get Closest Cluster</button>
+<div id="status" style="font-size: 16px">Status:</div>
+<div id="data-label" style="font-size: 12px">Data:</div>
+<div id="mousecoord-label" style="font-size: 12px">Mouse Coord:</div>
+<!-- Add a svg area, empty -->
+<div id="scatter_area"></div>
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+
+<!-- useful K mean tut https://ivanludvig.github.io/tech/k-means-d3 -->
+
+
+<script src="fuckingjs/index.js"></script>
+
+<script>
+
+  
+</script>
