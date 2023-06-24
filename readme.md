@@ -15,9 +15,9 @@ A project made for Imperial College Year 2 Electronic & Information Engineering 
    - [A* PathFinding](#a-pathfinding)
    - [Autonomous A* PathFinding to explored area](#autonomous-a-pathfinding-to-explored-area)
    - [Closed Loop Detection](#closed-loop-detection)
-2. [Rover Position Simulation](#rover-position-simulation)
-3. [Other Features](#other-features)
-4. [Future Implementation](#future-implementation)
+    - [Rover Position Simulation](#rover-position-simulation)
+2. [Other Features](#other-features)
+3. [Future Implementation](#future-implementation)
 
 
 ## Overview
